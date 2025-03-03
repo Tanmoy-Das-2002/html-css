@@ -623,10 +623,9 @@ Single Recipe
 .recipe-hero-img {
   height: 300px;
   border-radius: var(--borderRadius);
-  /* margin-bottom: 3rem; */
 }
-.recipe-info {
-  color: var(--grey-600);
+.recipe-hero p{
+  color: var(--grey-500);
 }
 .recipe-icons {
   display: grid;
@@ -670,6 +669,49 @@ Single Recipe
 }
 /*
 =============== 
-
+Insturctions on single recipe
 ===============
 */
+.recipe-content{
+  padding: 3rem 0rem;
+  display:grid;
+  gap: 3rem 5rem;
+}
+@media screen and (min-width: 992px) {
+  .recipe-content {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+.single-instruction header{
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1.5rem;
+  align-items: center;
+}
+.single-instruction header p{
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 0;
+  color: var(--primary-500);
+}
+.single-instruction > p{
+  color: var(--grey-700);
+}
+.single-instruction header div{
+  height: 2px;
+  background: var(--grey-300);
+}
+.second-column{
+  display: grid;
+  row-gap: 2rem;
+}
+.single-ingredient{
+  border-bottom: 2px solid var(--grey-300);
+  padding-bottom: 0.75rem;
+  color: var(--grey-700);
+}
+.single-tool{
+  border-bottom: 2px solid var(--grey-300);
+  padding-bottom: 0.75rem;
+  color: var(--primary-500);
+}
